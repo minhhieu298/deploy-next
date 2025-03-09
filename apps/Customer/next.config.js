@@ -1,6 +1,9 @@
 //@ts-check
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
+const {
+  NextFederationPlugin
+} = require('@module-federation/nextjs-mf');
 const { composePlugins, withNx } = require('@nx/next');
 
 /**
@@ -38,6 +41,7 @@ const nextConfig = {
         },
       },
     });
+    
     return config;
   },
 };
